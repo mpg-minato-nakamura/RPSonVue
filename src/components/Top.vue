@@ -3,7 +3,7 @@
     <div class="fl-p">
       <div class="content">
         <button class="btn-start" @click="startRps">Start</button>
-        <button class="btn-stop" @click="stopRps">Stop</button>
+        <button class="btn-stop" @click="clearRps">Stop</button>
       </div>
     </div>
     <div class="fl-p">
@@ -67,6 +67,11 @@ export default {
   methods: {
     selectRps (selectedValue) {
       this.selected = selectedValue
+    },
+    clearRps () {
+      this.stopRps
+      this.message = 'Start ボタンを押してください。'
+      this.opponent = ''
     },
     stopRps () {
       clearInterval(this.rpsTimer)
