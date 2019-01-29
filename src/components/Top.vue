@@ -3,7 +3,7 @@
     <div class="fl-p">
       <div class="content">
         <button class="btn-start" @click="startRps">Start</button>
-        <button class="btn-stop" @click="clearRps">Stop</button>
+        <button class="btn-stop" @click="clearRps">Reset</button>
       </div>
     </div>
     <div class="fl-p">
