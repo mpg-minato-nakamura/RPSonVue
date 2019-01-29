@@ -1,4 +1,5 @@
-# kaggle-search
+# RPS
+Vue.jsでじゃんけん。
 
 ## Project setup
 ```
